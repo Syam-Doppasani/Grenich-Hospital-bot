@@ -1,4 +1,7 @@
 import os
+import telegram
+print("telegram version:", telegram.__version__)
+
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
