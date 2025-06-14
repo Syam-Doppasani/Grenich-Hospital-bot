@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import asyncio
 import os
-BOT_TOKEN = os.getenv("bot-token")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 faq_responses = {
