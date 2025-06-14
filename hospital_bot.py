@@ -1,8 +1,9 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import asyncio
+import os
+BOT_TOKEN = os.getenv("bot-token")
 
-BOT_TOKEN = "7913715824:AAFJbdSWsIhjNMo8mRNKCMr6_i9xEj9Y2vY"  # Replace this
 
 faq_responses = {
     "hi": "👋 Welcome to Grenich Hospital! Type 'help' to see what I can do.",
